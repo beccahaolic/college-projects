@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <header>
+        <h2>EntreCampus</h2>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="trips.html">Trips</a>
+            <div class="dropdown">
+                <button class="dropbtn">Requests &#9660</button>
+                <div class="dropdown-content">
+                    <a id="registar-pedido" href="#">Registar pedido</a>
+                    <a id="registar-viagem" href="#">Registar viagem</a>
+                    <a id="remover-pedido" href="#">Remover Pedido</a>
+                    <a id="remover-viagem" href="#">Remover Viagem</a>
+                </div>
+            </div>
+            <a class="active" href="history.html">History</a>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class = "main-text">
+            <h1>Transparência Total</h1>
+            <p> Veja o histórico de viagens e dados de motoristas ou passageiros</p>
+        </div>
+
+        <div id = "display-results">
+                <form id="history-form">
+                    <input type="text" id="id" placeholder="ID motorista/passageiro">
+                    <select id="type">
+                        <option value="driver">Motorista</option>
+                        <option value="passenger">Passageiro</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            <div id="results-container"></div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>Designed by: Enoque Masasu and Fidelis Silva</p>
+        <p><a href="https://www.uevora.pt/" target="_blank">Universidade de Évora</a></p>
+    </footer>
+
+    <script src="history.js"></script>
+</body>
+</html>
